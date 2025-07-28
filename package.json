@@ -1,0 +1,31 @@
+{
+  "name": "backend-learning",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyphamcs/backend-learning.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "Huy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyphamcs/backend-learning/issues"
+  },
+  "homepage": "https://github.com/huyphamcs/backend-learning#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
