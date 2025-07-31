@@ -1,19 +1,16 @@
 
 
 import express from 'express';
+import { getABC, getHome, test } from '../controllers/homeController.js';
+
 const router = express.Router()
 
 
-router.get('/', (req, res) => {
-    res.render('sample.ejs')
-})
+router.get('/', getHome);
+router.get('/abc', getABC);
+router.get('/test', test);
 
-router.get('/abc', (req, res) => {
-    res.send('Hello World! in abc site')
-})
 
-router.get('/test', (req, res) => {
-    res.send('<h1>Hello in test site</h1>')
-})
+
 
 export default router;          
