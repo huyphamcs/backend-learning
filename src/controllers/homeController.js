@@ -1,5 +1,21 @@
+import connection from "../config/database.js"
+
+
+
 export const getHome = (req, res) => {
-    res.render('sample.ejs')
+    let users = [];
+    connection.query(
+        'SELECT * FROM Users',
+        function (err, results, fields) {
+            users = results;
+            console.log(">>> Check users: ", users);
+            console.log(">>> Result: " ,results);
+            // res.send(JSON.stringify(users));
+        }
+        
+    );
+    res.render('sample.ejs');
+    
 }
 
 export const getABC = (req, res) => {
